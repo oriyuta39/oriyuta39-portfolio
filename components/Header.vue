@@ -39,6 +39,12 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   position: relative;
   color: #444;
@@ -82,7 +88,6 @@ onBeforeUnmount(() => {
 
 .header_navi {
   display: flex;
-  width: 100%;
   justify-content: center;
   padding: 10px;
 }
@@ -91,10 +96,6 @@ onBeforeUnmount(() => {
   justify-content: center;
   list-style: none;
   margin: 0 auto;
-}
-
-.header_navi li {
-  position: relative;
 }
 
 .header_navi li a {

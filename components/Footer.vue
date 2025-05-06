@@ -19,6 +19,11 @@
 
 <style scoped>
 
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
 #footer {
   text-align: center;
 }

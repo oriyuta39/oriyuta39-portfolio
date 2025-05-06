@@ -11,6 +11,7 @@ import Footer from './components/Footer.vue'
   </div>
 
   <Footer />
+
 </template>
 
 <style scoped>
@@ -25,10 +26,5 @@ body {
   margin: 0 auto;
   padding: 80px 0px 0px 0px ;
   text-align: center;
-}
-
-ul, li {
-  padding: 0;
-  margin: 0;
 }
 </style>
