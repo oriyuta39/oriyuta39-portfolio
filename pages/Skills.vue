@@ -1,7 +1,16 @@
 <template>
   <div class="skills">
     <h1>スキルについてs</h1>
-    <p>スキル</p>
+    <section>
+      <table>
+        <tbody>
+           <tr>
+							<th>Html/CSS</th>
+							<td></td>
+						</tr>
+        </tbody>
+      </table>
+    </section>
   </div>
 </template>
 
