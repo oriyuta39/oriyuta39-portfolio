@@ -14,7 +14,7 @@
 
 <script setup>
 definePageMeta({
-  breadcrumb: 'Works'
+  breadcrumb: 'Works',
 })
 </script>
 

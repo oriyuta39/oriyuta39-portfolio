@@ -61,8 +61,9 @@
 
 <script setup>
 definePageMeta({
-  breadcrumb: 'Skills'
+  breadcrumb: 'Skills',
 })
+
 </script>
 
 <style scoped>

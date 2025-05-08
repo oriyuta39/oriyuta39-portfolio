@@ -8,7 +8,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "format": "eslint --fix . "
   },
   "dependencies": {
     "nuxt": "^3.16.2",
@@ -26,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/oriyuta39/oriyuta39-portfolio/issues"
   },
-  "homepage": "https://github.com/oriyuta39/oriyuta39-portfolio#readme"
+  "homepage": "https://github.com/oriyuta39/oriyuta39-portfolio#readme",
+  "devDependencies": {
+    "@nuxt/eslint": "^1.3.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "eslint": "^9.26.0"
+  }
 }

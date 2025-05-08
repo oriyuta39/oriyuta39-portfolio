@@ -2,14 +2,24 @@
   <footer id="footer">
     <nav class="footer_navi">
       <ul>
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/skills">Skills</NuxtLink></li>
-        <li><NuxtLink to="/works">Works</NuxtLink></li>
-        <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+        <li>
+          <NuxtLink to="/">Home</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/about">About</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/skills">Skills</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/works">Works</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/contact">Contact</NuxtLink>
+        </li>
       </ul>
     </nav>
-    <small>&copy; 2025 Oriyuta39.</small>
+    <small>&copy; 2025 oriyuta39.</small>
   </footer>
 </template>
 
@@ -18,8 +28,8 @@
 </script>
 
 <style scoped>
-
-ul, li {
+ul,
+li {
   padding: 0;
   margin: 0;
 }
@@ -37,6 +47,7 @@ ul, li {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
+
 .footer_navi ul {
   display: flex;
   justify-content: center;

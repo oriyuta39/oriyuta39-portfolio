@@ -4,11 +4,21 @@
       <h1>oriyuta39</h1>
       <nav class="header_navi">
         <ul>
-          <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/skills">Skills</NuxtLink></li>
-          <li><NuxtLink to="/works">Works</NuxtLink></li>
-          <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+          <li>
+            <NuxtLink to="/">Home</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/about">About</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/skills">Skills</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/works">Works</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/contact">Contact</NuxtLink>
+          </li>
         </ul>
       </nav>
     </div>
@@ -24,7 +34,8 @@ const handleScroll = () => {
 
   if (window.scrollY > 10) {
     el.classList.add('small')
-  } else {
+  }
+  else {
     el.classList.remove('small')
   }
 }
@@ -39,8 +50,8 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-
-ul, li {
+ul,
+li {
   padding: 0;
   margin: 0;
 }
@@ -68,7 +79,7 @@ ul, li {
   box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
 }
 
-#header > div > h1 {
+#header>div>h1 {
   line-height: 35px;
   text-align: center;
   transition: font-size 0.2s linear, line-height 0.2s linear;
@@ -80,7 +91,7 @@ ul, li {
   margin: 0 auto;
 }
 
-#header.small > div > h1 {
+#header.small>div>h1 {
   transition: font-size 0.2s linear, line-height 0.2s linear;
   font-size: 0px;
   line-height: 0px;
@@ -91,6 +102,7 @@ ul, li {
   justify-content: center;
   padding: 10px;
 }
+
 .header_navi ul {
   display: flex;
   justify-content: center;
@@ -115,5 +127,4 @@ ul, li {
   color: initial;
   text-decoration: initial;
 }
-
 </style>

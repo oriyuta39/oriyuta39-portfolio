@@ -5,12 +5,14 @@ import Breadcrumb from './components/Breadcrumb.vue'
 </script>
 
 <template>
-  <Header />
-  <div id="app">
-    <Breadcrumb />
-    <NuxtPage />
+  <div>
+    <Header />
+    <div id="app">
+      <Breadcrumb />
+      <NuxtPage />
+    </div>
+    <Footer />
   </div>
-  <Footer />
 </template>
 
 <style scoped>

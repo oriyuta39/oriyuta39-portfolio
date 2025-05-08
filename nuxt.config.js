@@ -1,3 +1,5 @@
+import { defineNuxtConfig } from 'nuxt3'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-06',
   app: {
@@ -12,10 +14,15 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: './oriyuta39_favicon.svg' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous'},
-        { href: 'https://fonts.googleapis.com/css2?family=Limelight&display=swap', rel: 'stylesheet' }
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+        { href: 'https://fonts.googleapis.com/css2?family=Limelight&display=swap', rel: 'stylesheet' },
       ],
       title: 'oriyuta39 - Portfolio',
     },
   },
+  devtools: { enabled: true },
+  // ここから追加
+  modules: [
+    '@nuxt/eslint',
+  ],
 })
