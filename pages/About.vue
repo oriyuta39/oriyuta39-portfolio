@@ -15,6 +15,10 @@
 							<td>2002/06/11</td>
 						</tr>
 						<tr>
+							<th>Location:</th>
+							<td>Tokyo</td>
+						</tr>
+						<tr>
 							<th>Role:</th>
 							<td>Technical school student</td>
 						</tr>

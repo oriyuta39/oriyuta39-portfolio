@@ -1,7 +1,12 @@
 <template>
   <div class="contact">
-    <h1>contactについてs</h1>
-    <p>contact</p>
+    <h1>連絡先</h1>
+    <section>
+      <p>Mail:</p>
+      <section>
+        
+      </section>
+    </section>
   </div>
 </template>
 
