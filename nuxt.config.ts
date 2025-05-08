@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt3'
-
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-06',
   app: {
