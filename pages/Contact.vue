@@ -6,6 +6,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+  breadcrumb: 'Contact'
+})
 </script>
 
 <style scoped>

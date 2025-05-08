@@ -4,20 +4,20 @@
     <section>
       <table>
         <tbody>
-           <tr>
-							<th>Html/CSS</th>
-							<td></td>
-						</tr>
+          <tr>
+            <th>Html/CSS</th>
+            <td></td>
+          </tr>
         </tbody>
       </table>
     </section>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Skills'
-}
+<script setup>
+definePageMeta({
+  breadcrumb: 'Skills'
+})
 </script>
 
 <style scoped>

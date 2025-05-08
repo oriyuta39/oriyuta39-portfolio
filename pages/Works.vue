@@ -5,10 +5,10 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Works'
-}
+<script setup>
+definePageMeta({
+  breadcrumb: 'Works'
+})
 </script>
 
 <style scoped>
