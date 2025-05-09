@@ -49,7 +49,7 @@
           <p>お問い合わせフォームや関連リンクについて</p>
         </div>
       </article>
-      <div id="container_pages" class="row row-cols-1 row-cols-sm-2 g-3">
+      <div id="container_pages" class="row g-3">
         <div class="col">
           <div class="card">
             <div class="card-body">
@@ -102,6 +102,8 @@
   place-items: center;
   min-width: 320px;
   font-family: "Kosugi Maru", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .title-box {
@@ -138,6 +140,27 @@
 
 #container_pages {
   padding: 10px;
-  max-width: 800px;
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 520px) {
+  .card {
+    width: 370px;
+  }
 }
 </style>
