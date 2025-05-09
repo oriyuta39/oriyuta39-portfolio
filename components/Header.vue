@@ -116,15 +116,19 @@ li {
   color: initial;
   text-decoration: none;
   transition: color 0.2s linear;
+  padding: 21px;
+  color: initial;
+  text-decoration: initial;
 }
 
 .header_navi li:hover a {
   color: red;
 }
 
-.header_navi li a {
-  padding: 21px;
-  color: initial;
-  text-decoration: initial;
+@media (max-width: 520px) {
+  .header_navi li a {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
 </style>

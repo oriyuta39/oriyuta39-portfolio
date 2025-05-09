@@ -41,7 +41,7 @@ li {
 .footer_navi {
   display: flex;
   padding: 10px;
-  width: 480px;
+  width: 470px;
   margin: 0 auto;
   justify-content: center;
   background: rgba(0, 0, 0, 0.1);
@@ -75,5 +75,16 @@ li {
   padding: 21px;
   color: initial;
   text-decoration: initial;
+}
+
+@media (max-width: 520px) {
+  .footer_navi {
+    width: 320px;
+  }
+
+  .footer_navi li a {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
 </style>

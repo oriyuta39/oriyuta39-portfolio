@@ -19,7 +19,7 @@ const route = useRoute()
 const breadcrumbs = computed(() => {
   const matched = route.matched.filter(r => r.meta?.breadcrumb)
   if (matched.length > 0 && matched[0].path !== '/') {
-    return [{ path: '/', name: 'ホーム', meta: { breadcrumb: 'ホーム' } }, ...matched]
+    return [{ path: '/', name: 'Home', meta: { breadcrumb: 'Home' } }, ...matched]
   }
   return matched
 })
@@ -29,11 +29,8 @@ const breadcrumbs = computed(() => {
 <style scoped>
 .breadcrumb {
   text-align: left;
-  /* テキストを左寄せに */
-  width: 700px;
-  /* 固定幅を設定 */
+  max-width: 700px;
   margin: 0 auto;
-  /* 中央に配置 */
 }
 
 .breadcrumb ul {
@@ -43,16 +40,11 @@ const breadcrumbs = computed(() => {
 
 .breadcrumb li {
   display: inline;
-  /* <li>をインライン表示 */
   list-style: none;
-  /* リストスタイルを無効に */
-  margin-right: 8px;
-  /* アイテム間のスペース */
 }
 
 .breadcrumb li+li::before {
   content: "/";
-  /* 各アイテムの間にスラッシュ */
   margin: 0 8px;
   color: #999;
 }
