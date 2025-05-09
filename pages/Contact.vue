@@ -2,8 +2,13 @@
   <div class="contact">
     <h1>連絡先</h1>
     <section>
-      <p>Mail:</p>
-      <section />
+      <h2>メールアドレス</h2>
+      <p>example@example.com</p>
+    </section>
+    <section>
+      <h2>SNS</h2>
+      <p>GitHub</p>
+      <p>X</p>
     </section>
   </div>
 </template>

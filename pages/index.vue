@@ -1,5 +1,10 @@
 <template>
   <div class="home">
+
+    <section>
+      <a href=""><img src="" alt=""></a>
+      <div class="image-box" />
+    </section>
     <section>
       <h1>「ITの世界で新しい自分に出会うために挑戦中です。」</h1>
       <p>
@@ -54,7 +59,18 @@
 </script>
 
 <style scoped>
-.home {
-  padding: 20px;
+section {
+  place-items: center;
+  min-width: 320px;
+}
+
+.image-box {
+  width: 800px;
+  height: 300px;
+  background-image: url('../public/images/simaenaga.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
 }
 </style>
