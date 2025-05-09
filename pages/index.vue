@@ -58,10 +58,11 @@
 <script setup>
 </script>
 
-<style scoped>
+<style>
 section {
   place-items: center;
   min-width: 320px;
+  font-family: "Kosugi Maru", sans-serif;
 }
 
 .image-box {
