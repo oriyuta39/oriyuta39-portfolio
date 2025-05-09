@@ -68,6 +68,7 @@ li {
 
 #header {
   width: 100%;
+  max-height: 84px;
   position: fixed;
   display: flex;
   align-items: center;
@@ -126,6 +127,7 @@ li {
 }
 
 @media (max-width: 520px) {
+
   .header_navi li a {
     font-size: 16px;
     padding: 10px;

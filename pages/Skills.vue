@@ -67,9 +67,8 @@ definePageMeta({
 </script>
 
 <style scoped>
-section {
+.skills {
   text-align: center;
-  /* セクション全体を中央揃えに */
 }
 
 table {

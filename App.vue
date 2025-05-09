@@ -25,7 +25,7 @@ body {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 84px;
   text-align: center;
 }
 </style>

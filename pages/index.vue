@@ -41,7 +41,7 @@
         </div>
       </article>
       <article>
-        <NuxtLink to="/skills">
+        <NuxtLink to="/contact">
           <h3>Contact/連絡先</h3>
         </NuxtLink>
         <p>My Connection Details</p>
@@ -49,6 +49,44 @@
           <p>お問い合わせフォームや関連リンクについて</p>
         </div>
       </article>
+      <div id="container_pages" class="row row-cols-1 row-cols-sm-2 g-3">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -56,7 +94,7 @@
 <script setup>
 </script>
 
-<style>
+<style scoped>
 .home {
   display: flex;
   flex-direction: column;
@@ -69,7 +107,6 @@
 .title-box {
   position: relative;
   width: 100%;
-  max-width: 800px;
   height: 200px;
   display: flex;
   align-items: center;
@@ -97,5 +134,10 @@
   z-index: 1;
   font-family: "Tangerine", cursive;
   font-size: 70px;
+}
+
+#container_pages {
+  padding: 10px;
+  max-width: 800px;
 }
 </style>

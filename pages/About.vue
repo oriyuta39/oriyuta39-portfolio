@@ -52,6 +52,7 @@ definePageMeta({
   breadcrumb: 'About',
 })
 </script>
+
 <style scoped>
 section {
   text-align: center;

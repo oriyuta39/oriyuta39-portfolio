@@ -19,8 +19,13 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  // ここから追加
   modules: [
     '@nuxt/eslint',
   ],
+  css: ['bootstrap/dist/css/bootstrap.min.css'],
+  vite: {
+    define: {
+      'process.env.DEBUG': false, // JS対応
+    },
+  },
 })
