@@ -76,7 +76,7 @@ li {
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgba(245, 245, 245, 0.97);
+  background: rgba(245, 245, 245, 0.7);
   box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
 }
 
@@ -90,6 +90,7 @@ li {
   font-family: "Limelight", sans-serif;
   width: 320px;
   margin: 0 auto;
+  color: #393939;
 }
 
 #header.small>div>h1 {
@@ -121,10 +122,11 @@ li {
   color: initial;
   text-decoration: initial;
   font-family: "Markazi Text", serif;
+  color: #393939;
 }
 
 .header_navi li:hover a {
-  color: red;
+  color: lightcoral;
 }
 
 .header_navi li a.active {

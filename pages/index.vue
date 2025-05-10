@@ -1,18 +1,19 @@
 <template>
   <div class="home">
-    <section class="title-box">
-      <h1>oriyuta39<br><small>Portfolio</small></h1>
+    <section id="title-box">
+      <h1>oriyuta39 - portfolio</h1>
     </section>
-    <section>
-      <h2>「ITの世界で新しい自分に出会うために挑戦中です。」</h2>
-      <p>
-        技術力をさらに高め、柔軟に対応できるエンジニアになりたいと思っています
-        このポートフォリオサイトでは、私がこれまでに作成した作品や学んできたことをまとめています
+
+    <section id="about-site" class="">
+      <h2 class="p-3">Rewriting My Story</h2>
+      <p class="p-3 mb-5">
+        とあるIT系専門学校に通う学生のポートフォリオサイトです。<br>
+        私がこれまでに作成した作品や学んできたことをまとめています。
       </p>
     </section>
 
     <section>
-      <h2>ページ紹介</h2>
+      <h2 class="pt-2">ページ紹介</h2>
       <div id="container_pages" class="row g-3">
         <div class="col">
           <NuxtLink to="/about">
@@ -71,6 +72,14 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: #393939;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -82,7 +91,7 @@ a {
   width: 100%;
 }
 
-.title-box {
+#title-box {
   position: relative;
   width: 100%;
   height: 200px;
@@ -92,7 +101,7 @@ a {
   overflow: hidden;
 }
 
-.title-box::before {
+#title-box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -107,25 +116,42 @@ a {
   z-index: 0;
 }
 
-.title-box h1 {
+#title-box h1 {
   position: relative;
   z-index: 1;
   font-family: "Tangerine", cursive;
   font-size: 70px;
+  color: #393939;
+}
+
+#about-site {
+  width: 100%;
+  max-width: 1080px;
+  border-bottom: 1px solid #393939;
+  margin-bottom: 60px;
+}
+
+#about-site h2 {
+  font-family: "Tangerine", cursive;
+  font-size: 80px;
+  color: lightcoral;
 }
 
 #container_pages {
   padding: 10px;
   max-width: 1080px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .card {
   width: 450px;
   height: 220px;
   overflow: hidden;
+  background-color: #f0808011;
+}
+
+.card h3,
+.card h4 {
+  color: skyblue;
 }
 
 .col {

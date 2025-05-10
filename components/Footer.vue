@@ -36,7 +36,6 @@ li {
 
 #footer {
   text-align: center;
-  margin-top: 20px;
 }
 
 .footer_navi {
