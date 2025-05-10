@@ -45,7 +45,7 @@ li {
   width: 470px;
   margin: 0 auto;
   justify-content: center;
-  background: rgba(39, 39, 39, 0.39);
+  background: rgba(39, 39, 39, 0.20);
   border-radius: 10px;
 }
 

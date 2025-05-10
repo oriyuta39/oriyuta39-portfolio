@@ -1,13 +1,15 @@
 <template>
   <div class="skills">
-    <h1>スキル</h1>
+    <div id="title_skill">
+      <h1>スキル</h1>
+    </div>
     <section>
-      <section>
-        <p>Qualifications</p>
-        <p>基本情報技術者試験</p>
-      </section>
-      <section>
-        <p>Programming Languages</p>
+      <div>
+        <h2 class="m-4">資格</h2>
+        <p class="fw-bold">基本情報技術者試験</p>
+      </div>
+      <div>
+        <h2 class="m-4">プログラミング言語</h2>
         <table>
           <tbody>
             <tr>
@@ -28,9 +30,9 @@
             </tr>
           </tbody>
         </table>
-      </section>
-      <section>
-        <p>Frameworks</p>
+      </div>
+      <div>
+        <h2 class="m-4">フレームワーク</h2>
         <table>
           <tbody>
             <tr>
@@ -39,14 +41,14 @@
             </tr>
           </tbody>
         </table>
-      </section>
-      <section>
-        <p>Tools</p>
+      </div>
+      <div>
+        <h2 class="m-4">ツール</h2>
         <table>
           <tbody>
             <tr>
               <th>Microsoft Office</th>
-              <td>★★☆☆☆</td>
+              <td>★☆☆☆☆</td>
             </tr>
             <tr>
               <th>Adobe Creative Cloud</th>
@@ -54,7 +56,7 @@
             </tr>
           </tbody>
         </table>
-      </section>
+      </div>
     </section>
   </div>
 </template>
@@ -69,6 +71,29 @@ definePageMeta({
 <style scoped>
 .skills {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-items: center;
+  min-width: 320px;
+  font-family: "Kosugi Maru", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section div {
+  margin-top: 60px;
+}
+
+#title_skill {
+  width: 100%;
+  max-width: 1080px;
+  border-bottom: 1px solid #393939;
+  padding-bottom: 30px;
 }
 
 table {

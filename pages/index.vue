@@ -65,6 +65,7 @@
 </template>
 
 <script setup>
+
 </script>
 
 <style scoped>
@@ -139,7 +140,7 @@ section {
 
 #container_pages {
   padding: 10px;
-  max-width: 850px;
+  max-width: 840px;
 }
 
 .card {
@@ -148,18 +149,45 @@ section {
   overflow: hidden;
   background-color: #f0f0f5;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.39);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transform: scale(1);
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.50);
+  transform: scale(1.02);
+}
+
+.card h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-about {
+  background: linear-gradient(to bottom right, #ffffff 40%, #ff000039);
 }
 
 .card-about h3 {
   color: tomato;
 }
 
+.card-skills {
+  background: linear-gradient(to bottom right, #ffffff 40%, #00ffff39);
+}
+
 .card-skills h3 {
   color: lightskyblue;
 }
 
+.card-works {
+  background: linear-gradient(to bottom right, #ffffff 40%, #00ff0039);
+}
+
 .card-works h3 {
-  color: lightgreen;
+  color: forestgreen;
+}
+
+.card-contact {
+  background: linear-gradient(to bottom right, #ffffff 40%, #ffff0039);
 }
 
 .card-contact h3 {
