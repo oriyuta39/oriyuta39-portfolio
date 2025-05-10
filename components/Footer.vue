@@ -45,7 +45,7 @@ li {
   width: 470px;
   margin: 0 auto;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(39, 39, 39, 0.39);
   border-radius: 10px;
 }
 
@@ -70,7 +70,7 @@ li {
 }
 
 .footer_navi li:hover a {
-  color: red;
+  color: #ff0039;
 }
 
 .footer_navi li a {

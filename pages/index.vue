@@ -18,7 +18,7 @@
         <div class="col">
           <NuxtLink to="/about">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body card-about">
                 <h3 class="card-title mt-4">About / 自己紹介</h3>
                 <h4 class="card-title small">My Story Writing</h4>
                 <p class="card-text mt-5">プロフィールやこれまでの経験について</p>
@@ -29,7 +29,7 @@
         <div class="col">
           <NuxtLink to="/skills">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body card-skills">
                 <h3 class="card-title mt-4">Skills / スキル</h3>
                 <h4 class="card-title small">My Technical Ability</h4>
                 <p class="card-text mt-5">保有資格や専門スキルについて</p>
@@ -40,7 +40,7 @@
         <div class="col">
           <NuxtLink to="/works">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body card-works">
                 <h3 class="card-title mt-4">Works / 作品</h3>
                 <h4 class="card-title small">My Creative Creations</h4>
                 <p class="card-text mt-5">開発プロジェクトと成果物について</p>
@@ -51,9 +51,9 @@
         <div class="col">
           <NuxtLink to="/contact">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body card-contact">
                 <h3 class="card-title mt-4">Contact / 連絡先</h3>
-                <h4 class="card-title small">My Connection Details</h4>
+                <h4 class="card-title small ">My Connection Details</h4>
                 <p class="card-text mt-5">お問い合わせフォームや関連リンクについて</p>
               </div>
             </div>
@@ -139,19 +139,31 @@ section {
 
 #container_pages {
   padding: 10px;
-  max-width: 1080px;
+  max-width: 850px;
 }
 
 .card {
-  width: 450px;
+  width: 355px;
   height: 220px;
   overflow: hidden;
-  background-color: #f0808011;
+  background-color: #f0f0f5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.39);
 }
 
-.card h3,
-.card h4 {
-  color: skyblue;
+.card-about h3 {
+  color: tomato;
+}
+
+.card-skills h3 {
+  color: lightskyblue;
+}
+
+.card-works h3 {
+  color: lightgreen;
+}
+
+.card-contact h3 {
+  color: gold;
 }
 
 .col {

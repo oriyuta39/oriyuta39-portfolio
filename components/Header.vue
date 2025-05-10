@@ -58,7 +58,6 @@ li {
 
 .container {
   position: relative;
-  color: #444;
   font-size: 14px;
   font-weight: 300;
   font-family: Roboto, 'Open Sans', Arial, sans-serif;
@@ -126,7 +125,7 @@ li {
 }
 
 .header_navi li:hover a {
-  color: lightcoral;
+  color: #ff0039;
 }
 
 .header_navi li a.active {

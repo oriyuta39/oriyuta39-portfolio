@@ -5,7 +5,7 @@ import Breadcrumb from './components/Breadcrumb.vue'
 </script>
 
 <template>
-  <div>
+  <div id="main">
     <Header />
     <div id="app">
       <Breadcrumb />
@@ -20,6 +20,10 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
+}
+
+#main {
+  background-color: #39393939;
 }
 
 #app {
