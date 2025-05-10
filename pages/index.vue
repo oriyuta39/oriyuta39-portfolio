@@ -4,7 +4,7 @@
       <h1>oriyuta39<br><small>Portfolio</small></h1>
     </section>
     <section>
-      <h1>「ITの世界で新しい自分に出会うために挑戦中です。」</h1>
+      <h2>「ITの世界で新しい自分に出会うために挑戦中です。」</h2>
       <p>
         技術力をさらに高め、柔軟に対応できるエンジニアになりたいと思っています
         このポートフォリオサイトでは、私がこれまでに作成した作品や学んできたことをまとめています
@@ -13,78 +13,50 @@
 
     <section>
       <h2>ページ紹介</h2>
-      <article>
-        <NuxtLink to="/about">
-          <h3>About/自己紹介</h3>
-        </NuxtLink>
-        <p>My Story Writing</p>
-        <div>
-          <p>プロフィールやこれまでの経験について</p>
-        </div>
-      </article>
-      <article>
-        <NuxtLink to="/skills">
-          <h3>Skills/スキル</h3>
-        </NuxtLink>
-        <p>My Technical Ability</p>
-        <div>
-          <p>保有資格や専門スキルについて</p>
-        </div>
-      </article>
-      <article>
-        <NuxtLink to="/works">
-          <h3>Works/作品</h3>
-        </NuxtLink>
-        <p>My Creative Creations</p>
-        <div>
-          <p>開発プロジェクトと成果物について</p>
-        </div>
-      </article>
-      <article>
-        <NuxtLink to="/contact">
-          <h3>Contact/連絡先</h3>
-        </NuxtLink>
-        <p>My Connection Details</p>
-        <div>
-          <p>お問い合わせフォームや関連リンクについて</p>
-        </div>
-      </article>
       <div id="container_pages" class="row g-3">
         <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+          <NuxtLink to="/about">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title mt-4">About / 自己紹介</h3>
+                <h4 class="card-title small">My Story Writing</h4>
+                <p class="card-text mt-5">プロフィールやこれまでの経験について</p>
+              </div>
             </div>
-          </div>
+          </NuxtLink>
         </div>
         <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+          <NuxtLink to="/skills">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title mt-4">Skills / スキル</h3>
+                <h4 class="card-title small">My Technical Ability</h4>
+                <p class="card-text mt-5">保有資格や専門スキルについて</p>
+              </div>
             </div>
-          </div>
+          </NuxtLink>
         </div>
         <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
+          <NuxtLink to="/works">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title mt-4">Works / 作品</h3>
+                <h4 class="card-title small">My Creative Creations</h4>
+                <p class="card-text mt-5">開発プロジェクトと成果物について</p>
+              </div>
             </div>
-          </div>
+          </NuxtLink>
         </div>
         <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+          <NuxtLink to="/contact">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title mt-4">Contact / 連絡先</h3>
+                <h4 class="card-title small">My Connection Details</h4>
+                <p class="card-text mt-5">お問い合わせフォームや関連リンクについて</p>
+              </div>
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -95,6 +67,10 @@
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -147,8 +123,8 @@
 }
 
 .card {
-  width: 500px;
-  height: 250px;
+  width: 450px;
+  height: 220px;
   overflow: hidden;
 }
 
@@ -156,6 +132,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
+}
+
+.card-title {
+  font-family: "Markazi Text", serif;
 }
 
 @media (max-width: 520px) {

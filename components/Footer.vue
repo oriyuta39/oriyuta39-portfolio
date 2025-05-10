@@ -36,11 +36,13 @@ li {
 
 #footer {
   text-align: center;
+  margin-top: 20px;
 }
 
 .footer_navi {
   display: flex;
   padding: 10px;
+  line-height: 30px;
   width: 470px;
   margin: 0 auto;
   justify-content: center;
@@ -61,10 +63,11 @@ li {
 
 .footer_navi li a {
   margin: 0;
-  font-size: 18px;
+  font-size: 24px;
   color: initial;
   text-decoration: none;
   transition: color 0.2s linear;
+  font-family: "Markazi Text", serif;
 }
 
 .footer_navi li:hover a {
@@ -72,18 +75,18 @@ li {
 }
 
 .footer_navi li a {
-  padding: 21px;
+  padding: 0px 21px;
   color: initial;
   text-decoration: initial;
 }
 
 @media (max-width: 520px) {
   .footer_navi {
-    width: 320px;
+    width: 340px;
   }
 
   .footer_navi li a {
-    font-size: 16px;
+    font-size: 22px;
     padding: 10px;
   }
 }

@@ -25,7 +25,14 @@ body {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding-top: 84px;
+  padding-top: 78px;
   text-align: center;
+}
+
+@media (max-width: 520px) {
+
+  #app {
+    padding-top: 70px;
+  }
 }
 </style>

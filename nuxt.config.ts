@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/svg+xml', href: './oriyuta39_favicon.svg' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
-        { href: 'https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Limelight&family=Tangerine:wght@700&display=swap', rel: 'stylesheet' },
+        { href: 'https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Limelight&family=Markazi+Text:wght@500&family=Tangerine:wght@700&display=swap', rel: 'stylesheet' },
       ],
       title: 'oriyuta39 - Portfolio',
     },

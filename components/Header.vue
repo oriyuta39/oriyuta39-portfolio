@@ -5,19 +5,19 @@
       <nav class="header_navi">
         <ul>
           <li>
-            <NuxtLink to="/">Home</NuxtLink>
+            <NuxtLink to="/" exact-active-class="active">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/about">About</NuxtLink>
+            <NuxtLink to="/about" exact-active-class="active">About</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/skills">Skills</NuxtLink>
+            <NuxtLink to="/skills" exact-active-class="active">Skills</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/works">Works</NuxtLink>
+            <NuxtLink to="/works" exact-active-class="active">Works</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/contact">Contact</NuxtLink>
+            <NuxtLink to="/contact" exact-active-class="active">Contact</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -101,7 +101,6 @@ li {
 .header_navi {
   display: flex;
   justify-content: center;
-  padding: 10px;
 }
 
 .header_navi ul {
@@ -113,24 +112,31 @@ li {
 
 .header_navi li a {
   margin: 0;
-  font-size: 18px;
+  font-size: 2rem;
   color: initial;
   text-decoration: none;
   transition: color 0.2s linear;
-  padding: 21px;
+  line-height: 40px;
+  padding: 0px 21px;
   color: initial;
   text-decoration: initial;
+  font-family: "Markazi Text", serif;
 }
 
 .header_navi li:hover a {
   color: red;
 }
 
+.header_navi li a.active {
+  border-bottom: 1px solid #000;
+}
+
 @media (max-width: 520px) {
 
   .header_navi li a {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 22px;
+    padding: 0px 15px;
+    line-height: 32px;
   }
 }
 </style>
