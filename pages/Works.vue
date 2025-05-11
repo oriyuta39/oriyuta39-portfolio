@@ -1,24 +1,27 @@
 <template>
-  <div class="works mb-4">
-    <div id="title-works">
-      <h1>作品</h1>
-    </div>
-    <section id="works_1" class="container-works">
-      <h2 class="mt-4">シミュレーション型WEBアプリ</h2>
-      <p>2025/03</p>
-      <div>
-        <a href="https://oriyuta39.github.io/overload-simulator/" target="_blank">
-          <img src="../public/images/overloadsimulator.png" alt="オーバーロードシミュレーター">
-        </a>
-        <p>HTML/CSS/JavaScript</p>
-        <a href="https://github.com/oriyuta39/overload-simulator">
-          <p>Github</p>
-        </a>
+  <div>
+    <Breadcrumb />
+    <div class="works mb-4">
+      <div id="title-works">
+        <h1>作品</h1>
       </div>
-      <p>初めて作ったシンプルなWEBアプリです。<br>
-        とあるゲームに登場する「装備品の性能を厳選する仕組み」を再現した、静的WEBアプリです。<br>
-      </p>
-    </section>
+      <section id="works_1" class="container-works">
+        <h2 class="mt-4">シミュレーション型WEBアプリ</h2>
+        <p>2025/03</p>
+        <div>
+          <a href="https://oriyuta39.github.io/overload-simulator/" target="_blank">
+            <img src="../public/images/overloadsimulator.png" alt="オーバーロードシミュレーター">
+          </a>
+          <p>HTML/CSS/JavaScript</p>
+          <a href="https://github.com/oriyuta39/overload-simulator">
+            <p>Github</p>
+          </a>
+        </div>
+        <p>初めて作ったシンプルなWEBアプリです。<br>
+          とあるゲームに登場する「装備品の性能を厳選する仕組み」を再現した、静的WEBアプリです。<br>
+        </p>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -43,7 +46,8 @@ definePageMeta({
 
 #title-works {
   width: 100%;
-  max-width: 1080px;
+  max-width: 840px;
+  border-top: 2px solid #ffaa39;
   border-bottom: 2px solid #ffaa39;
   padding: 30px;
 }

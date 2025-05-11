@@ -130,7 +130,7 @@ li {
 }
 
 .header_navi li a.active {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ffaa39;
 }
 
 @media (max-width: 520px) {

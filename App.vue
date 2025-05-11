@@ -2,8 +2,9 @@
   <div id="main">
     <Header />
     <div id="app">
-      <Breadcrumb />
-      <NuxtPage />
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </div>
     <Footer />
   </div>
@@ -12,7 +13,6 @@
 <script setup>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
-import Breadcrumb from './components/Breadcrumb.vue'
 </script>
 
 <style scoped>
@@ -32,6 +32,17 @@ body {
   margin: 0 auto;
   padding-top: 78px;
   text-align: center;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 @media (max-width: 520px) {

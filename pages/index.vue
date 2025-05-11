@@ -4,16 +4,18 @@
       <h1>oriyuta39 - portfolio</h1>
     </section>
 
-    <section id="about-site">
+    <section id="about-site" class="m-5">
       <h2 class="p-2">Rewriting My Story</h2>
-      <p class="p-3 mb-5">
+      <p class="p-2">
         とあるIT系専門学校に通う学生のポートフォリオサイトです。<br>
         私がこれまでに作成した作品や学んできたことをまとめています。
       </p>
     </section>
 
     <section id="pages">
-      <h1 class="pt-2">ページ紹介</h1>
+      <div id="title-pages">
+        <h1>ページ紹介</h1>
+      </div>
       <div id="container-pages" class="row g-3">
         <div class="col">
           <NuxtLink to="/about">
@@ -125,8 +127,6 @@ p {
 #about-site {
   width: 100%;
   max-width: 640px;
-  border-bottom: 2px solid #ffaa39;
-  margin-bottom: 60px;
 }
 
 #about-site h2 {
@@ -138,9 +138,11 @@ p {
   width: 520px;
 }
 
-#pages h1 {
-  padding-bottom: 60px;
+#title-pages {
+  width: 100%;
+  border-top: 2px solid #ffaa39;
   border-bottom: 2px solid #ffaa39;
+  padding: 30px;
 }
 
 #container-pages {
@@ -165,53 +167,36 @@ p {
   transform: scale(1);
 }
 
+.card h3 {
+  color: #393939;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .card:hover {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.50);
   transform: scale(1.02);
 }
 
-.card h3 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+.card:hover h3 {
+  color: #ff0039;
 }
 
 .card-about {
   background: linear-gradient(to bottom right, #ffffff 40%, #ff000039);
 }
 
-.card-about h3 {
-  color: #393939;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
 .card-skills {
   background: linear-gradient(to bottom right, #ffffff 40%, #00ffff39);
-}
-
-.card-skills h3 {
-  color: #393939;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 
 .card-works {
   background: linear-gradient(to bottom right, #ffffff 40%, #00ff0039);
 }
 
-.card-works h3 {
-  color: #393939;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
 .card-contact {
   background: linear-gradient(to bottom right, #ffffff 40%, #ffff0039);
-}
-
-.card-contact h3 {
-  color: #393939;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 
 .card-title {

@@ -17,6 +17,10 @@ export default defineNuxtConfig({
       ],
       title: 'oriyuta39 - Portfolio',
     },
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+    },
   },
   devtools: { enabled: true },
   modules: [

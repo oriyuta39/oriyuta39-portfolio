@@ -1,5 +1,5 @@
 <template>
-  <nav aria-label="breadcrumb" class="breadcrumb bi bi-house">
+  <nav v-if="!isHomePage" aria-label="breadcrumb" class="breadcrumb bi bi-house">
     <ul>
       <li v-for="(crumb, index) in breadcrumbs" :key="crumb.path">
         <NuxtLink v-if="index !== breadcrumbs.length - 1" :to="crumb.path">
@@ -17,6 +17,8 @@
 <script setup>
 const route = useRoute()
 
+const isHomePage = computed(() => route.path === '/')
+
 const breadcrumbs = computed(() => {
   const matched = route.matched.filter(r => r.meta?.breadcrumb)
   if (matched.length > 0 && matched[0].path !== '/') {
@@ -32,13 +34,13 @@ const breadcrumbs = computed(() => {
   text-align: left;
   max-width: 700px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .breadcrumb a {
   text-decoration: none;
   color: #393939;
   transition: color 0.2s linear;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .breadcrumb li:hover a {
