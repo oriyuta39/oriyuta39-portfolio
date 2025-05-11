@@ -77,10 +77,6 @@ p {
   color: #393939;
 }
 
-section {
-  margin-bottom: 60px;
-}
-
 .home {
   display: flex;
   flex-direction: column;
@@ -148,8 +144,15 @@ section {
 }
 
 #container-pages {
-  padding: 10px;
   max-width: 840px;
+  margin: 25px 0;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
 }
 
 .card {
@@ -209,13 +212,6 @@ section {
   color: #393939;
   font-weight: bold;
   letter-spacing: 2px;
-}
-
-.col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
 }
 
 .card-title {

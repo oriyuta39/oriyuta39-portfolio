@@ -21,16 +21,20 @@
           </tr>
           <tr>
             <th>所属:</th>
-            <td>専門学校在学中(2027年卒業予定)</td>
+            <td>IT系専門学校在学中(2027年卒業予定)</td>
           </tr>
           <tr>
             <th>趣味:</th>
             <td>ゲーム、音楽鑑賞</td>
           </tr>
+          <tr>
+            <th>性格:</th>
+            <td>真面目、責任感が強い</td>
+          </tr>
         </tbody>
       </table>
     </section>
-    <section class="container-about mb-5">
+    <section class="container-about mb-4">
       <h2 class="m-4">コメント</h2>
       <div>
         <p>現在、IT系専門学校に在学し、IT技術の習得に積極的に取り組んでいます。<br>
@@ -77,7 +81,7 @@ definePageMeta({
   max-width: 820px;
   border-bottom: 1px solid #ffaa39;
   padding: 20px 0px 40px 0px;
-  margin: 0 20px 0px 20px;
+  margin: 0 20px;
 }
 
 table {
@@ -85,13 +89,12 @@ table {
   border-collapse: collapse;
 }
 
-th,
-td {
-  padding: 8px;
-  text-align: left;
+th {
+  padding: 8px 20px;
+  text-align: right;
 }
 
-th {
-  width: 120px;
+td {
+  text-align: center;
 }
 </style>

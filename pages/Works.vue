@@ -1,5 +1,5 @@
 <template>
-  <div class="works">
+  <div class="works mb-4">
     <div id="title-works">
       <h1>作品</h1>
     </div>
@@ -39,7 +39,6 @@ definePageMeta({
   font-family: "Kosugi Maru", sans-serif;
   overflow-x: hidden;
   width: 100%;
-  margin-bottom: 60px;
 }
 
 #title-works {

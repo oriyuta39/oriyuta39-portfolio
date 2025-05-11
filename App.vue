@@ -1,9 +1,3 @@
-<script setup>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
-import Breadcrumb from './components/Breadcrumb.vue'
-</script>
-
 <template>
   <div id="main">
     <Header />
@@ -15,6 +9,12 @@ import Breadcrumb from './components/Breadcrumb.vue'
   </div>
 </template>
 
+<script setup>
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+import Breadcrumb from './components/Breadcrumb.vue'
+</script>
+
 <style scoped>
 body {
   display: flex;
@@ -24,6 +24,7 @@ body {
 
 #main {
   background-color: #ffffff39;
+  font-display: swap;
 }
 
 #app {
