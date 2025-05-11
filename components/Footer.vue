@@ -44,7 +44,7 @@ li {
   display: flex;
   padding: 10px;
   line-height: 30px;
-  width: 470px;
+  width: 500px;
   margin: 0 auto;
   border: 1px solid rgba(39, 39, 39, 0.5);
   border-radius: 10px;
@@ -87,7 +87,7 @@ li {
 
 @media (max-width: 520px) {
   .footer-navi {
-    width: 340px;
+    width: 360px;
   }
 
   .footer-navi li a {

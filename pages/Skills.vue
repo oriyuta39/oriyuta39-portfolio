@@ -3,7 +3,7 @@
     <div id="title-skill">
       <h1>スキル</h1>
     </div>
-    <section id="container-skills" class="row d-flex justify-content-center mb-4">
+    <section id="container-skills" class="row mb-4">
       <div class="container-table">
         <h2 class="m-4">プログラミング言語</h2>
         <table>
@@ -96,6 +96,7 @@ definePageMeta({
 
 #container-skills {
   max-width: 1080px;
+  justify-content: center;
 }
 
 .container-table {
