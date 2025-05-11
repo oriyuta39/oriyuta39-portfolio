@@ -1,8 +1,9 @@
 <template>
-  <nav aria-label="breadcrumb" class="breadcrumb">
+  <nav aria-label="breadcrumb" class="breadcrumb bi bi-house">
     <ul>
       <li v-for="(crumb, index) in breadcrumbs" :key="crumb.path">
         <NuxtLink v-if="index !== breadcrumbs.length - 1" :to="crumb.path">
+          <FontAwesomeIcon :icon="['fas', 'house']" />
           {{ crumb.meta?.breadcrumb || crumb.name }}
         </NuxtLink>
         <span v-else aria-current="page">
@@ -31,6 +32,17 @@ const breadcrumbs = computed(() => {
   text-align: left;
   max-width: 700px;
   margin: 0 auto;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #393939;
+  transition: color 0.2s linear;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumb li:hover a {
+  color: #ff0039;
 }
 
 .breadcrumb ul {

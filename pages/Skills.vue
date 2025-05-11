@@ -3,12 +3,8 @@
     <div id="title_skill">
       <h1>スキル</h1>
     </div>
-    <section>
-      <div>
-        <h2 class="m-4">資格</h2>
-        <p class="fw-bold">基本情報技術者試験</p>
-      </div>
-      <div>
+    <section id="container-skills" class="row d-flex justify-content-center">
+      <div class="container-table">
         <h2 class="m-4">プログラミング言語</h2>
         <table>
           <tbody>
@@ -26,12 +22,12 @@
             </tr>
             <tr>
               <th>Java</th>
-              <td>★★☆☆☆</td>
+              <td>★☆☆☆☆</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div>
+      <div class="container-table">
         <h2 class="m-4">フレームワーク</h2>
         <table>
           <tbody>
@@ -42,7 +38,17 @@
           </tbody>
         </table>
       </div>
-      <div>
+      <div class="container-table">
+        <h2 class="m-4">資格</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th class="fw-bold text-center">基本情報技術者試験</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container-table">
         <h2 class="m-4">ツール</h2>
         <table>
           <tbody>
@@ -81,37 +87,37 @@ definePageMeta({
   width: 100%;
 }
 
-section {
-  margin-bottom: 60px;
-}
-
-section div {
-  margin-top: 60px;
-}
-
 #title_skill {
   width: 100%;
   max-width: 1080px;
-  border-bottom: 1px solid #393939;
-  padding-bottom: 30px;
+  border-bottom: 1px solid #ffaa39;
+  padding: 30px;
+}
+
+#container-skills {
+  margin-bottom: 60px;
+  max-width: 1080px;
+}
+
+.container-table {
+  max-width: 380px;
+  border-bottom: 1px solid #ffaa39;
+  padding: 60px 0px 60px 0px;
+  margin: 0 20px 0 20px;
 }
 
 table {
   margin: 0 auto;
-  /* テーブルを中央揃えに */
   border-collapse: collapse;
-  /* テーブルの枠線を重ならないように */
 }
 
 th,
 td {
-  padding: 8px 12px;
+  padding: 8px;
   text-align: left;
-  /* テーブル内のテキストを左揃えに */
 }
 
 th {
-  width: 240px;
-  /* th の幅を固定 */
+  width: 200px;
 }
 </style>

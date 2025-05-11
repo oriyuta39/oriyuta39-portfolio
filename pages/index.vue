@@ -4,22 +4,22 @@
       <h1>oriyuta39 - portfolio</h1>
     </section>
 
-    <section id="about-site" class="">
-      <h2 class="p-3">Rewriting My Story</h2>
+    <section id="about-site">
+      <h2 class="p-2">Rewriting My Story</h2>
       <p class="p-3 mb-5">
         とあるIT系専門学校に通う学生のポートフォリオサイトです。<br>
         私がこれまでに作成した作品や学んできたことをまとめています。
       </p>
     </section>
 
-    <section>
-      <h2 class="pt-2">ページ紹介</h2>
+    <section id="pages">
+      <h1 class="pt-2">ページ紹介</h1>
       <div id="container_pages" class="row g-3">
         <div class="col">
           <NuxtLink to="/about">
             <div class="card">
               <div class="card-body card-about">
-                <h3 class="card-title mt-4">About / 自己紹介</h3>
+                <h3 class="card-title mt-4">About / <span class="jp-font">自己紹介</span></h3>
                 <h4 class="card-title small">My Story Writing</h4>
                 <p class="card-text mt-5">プロフィールやこれまでの経験について</p>
               </div>
@@ -30,7 +30,7 @@
           <NuxtLink to="/skills">
             <div class="card">
               <div class="card-body card-skills">
-                <h3 class="card-title mt-4">Skills / スキル</h3>
+                <h3 class="card-title mt-4">Skills / <span class="jp-font">スキル</span></h3>
                 <h4 class="card-title small">My Technical Ability</h4>
                 <p class="card-text mt-5">保有資格や専門スキルについて</p>
               </div>
@@ -41,7 +41,7 @@
           <NuxtLink to="/works">
             <div class="card">
               <div class="card-body card-works">
-                <h3 class="card-title mt-4">Works / 作品</h3>
+                <h3 class="card-title mt-4">Works / <span class="jp-font">作品</span></h3>
                 <h4 class="card-title small">My Creative Creations</h4>
                 <p class="card-text mt-5">開発プロジェクトと成果物について</p>
               </div>
@@ -52,7 +52,7 @@
           <NuxtLink to="/contact">
             <div class="card">
               <div class="card-body card-contact">
-                <h3 class="card-title mt-4">Contact / 連絡先</h3>
+                <h3 class="card-title mt-4">Contact / <span class="jp-font">連絡先</span></h3>
                 <h4 class="card-title small ">My Connection Details</h4>
                 <p class="card-text mt-5">お問い合わせフォームや関連リンクについて</p>
               </div>
@@ -123,12 +123,13 @@ section {
   font-family: "Tangerine", cursive;
   font-size: 70px;
   color: #393939;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #about-site {
   width: 100%;
-  max-width: 1080px;
-  border-bottom: 1px solid #393939;
+  max-width: 640px;
+  border-bottom: 1px solid #ffaa39;
   margin-bottom: 60px;
 }
 
@@ -136,6 +137,12 @@ section {
   font-family: "Tangerine", cursive;
   font-size: 80px;
   color: lightcoral;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#pages h1 {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ffaa39;
 }
 
 #container_pages {
@@ -167,7 +174,9 @@ section {
 }
 
 .card-about h3 {
-  color: tomato;
+  color: #393939;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .card-skills {
@@ -175,7 +184,9 @@ section {
 }
 
 .card-skills h3 {
-  color: lightskyblue;
+  color: #393939;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .card-works {
@@ -183,7 +194,9 @@ section {
 }
 
 .card-works h3 {
-  color: forestgreen;
+  color: #393939;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .card-contact {
@@ -191,7 +204,9 @@ section {
 }
 
 .card-contact h3 {
-  color: gold;
+  color: #393939;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .col {
@@ -203,6 +218,10 @@ section {
 
 .card-title {
   font-family: "Markazi Text", serif;
+}
+
+.jp-font {
+  font-family: "Kosugi Maru", sans-serif;
 }
 
 @media (max-width: 520px) {
