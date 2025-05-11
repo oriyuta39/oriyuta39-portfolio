@@ -67,7 +67,7 @@ li {
   text-decoration: none;
   transition: color 0.2s linear;
   font-family: "Markazi Text", serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .footer_navi li:hover a {

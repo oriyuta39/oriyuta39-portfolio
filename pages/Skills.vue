@@ -1,6 +1,6 @@
 <template>
   <div class="skills">
-    <div id="title_skill">
+    <div id="title-skill">
       <h1>スキル</h1>
     </div>
     <section id="container-skills" class="row d-flex justify-content-center">
@@ -87,10 +87,10 @@ definePageMeta({
   width: 100%;
 }
 
-#title_skill {
+#title-skill {
   width: 100%;
   max-width: 1080px;
-  border-bottom: 1px solid #ffaa39;
+  border-bottom: 2px solid #ffaa39;
   padding: 30px;
 }
 
@@ -102,7 +102,7 @@ definePageMeta({
 .container-table {
   max-width: 380px;
   border-bottom: 1px solid #ffaa39;
-  padding: 60px 0px 60px 0px;
+  padding: 20px 0px 40px 0px;
   margin: 0 20px 0 20px;
 }
 

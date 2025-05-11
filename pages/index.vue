@@ -14,7 +14,7 @@
 
     <section id="pages">
       <h1 class="pt-2">ページ紹介</h1>
-      <div id="container_pages" class="row g-3">
+      <div id="container-pages" class="row g-3">
         <div class="col">
           <NuxtLink to="/about">
             <div class="card">
@@ -129,23 +129,25 @@ section {
 #about-site {
   width: 100%;
   max-width: 640px;
-  border-bottom: 1px solid #ffaa39;
+  border-bottom: 2px solid #ffaa39;
   margin-bottom: 60px;
 }
 
 #about-site h2 {
+  margin: 0 auto;
   font-family: "Tangerine", cursive;
   font-size: 80px;
   color: lightcoral;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: 520px;
 }
 
 #pages h1 {
   padding-bottom: 60px;
-  border-bottom: 1px solid #ffaa39;
+  border-bottom: 2px solid #ffaa39;
 }
 
-#container_pages {
+#container-pages {
   padding: 10px;
   max-width: 840px;
 }
@@ -166,7 +168,7 @@ section {
 }
 
 .card h3 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card-about {
@@ -225,6 +227,10 @@ section {
 }
 
 @media (max-width: 520px) {
+  #about-site h2 {
+    width: 320px;
+  }
+
   .card {
     width: 370px;
   }

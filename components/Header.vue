@@ -122,7 +122,7 @@ li {
   text-decoration: initial;
   font-family: "Markazi Text", serif;
   color: #393939;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .header_navi li:hover a {

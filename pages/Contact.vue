@@ -1,9 +1,11 @@
 <template>
   <div class="contact">
-    <h1>連絡先</h1>
+    <div id="title_skill">
+      <h1>連絡先</h1>
+    </div>
     <section>
       <h2>メールアドレス</h2>
-      <p>example@example.com</p>
+      <p>oriyuta39.dev@gmail.com</p>
     </section>
     <section>
       <h2>SNS</h2>
