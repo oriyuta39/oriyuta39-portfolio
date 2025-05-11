@@ -13,8 +13,8 @@
             <img src="../public/images/overloadsimulator.png" alt="オーバーロードシミュレーター">
           </a>
           <p>HTML/CSS/JavaScript</p>
-          <a href="https://github.com/oriyuta39/overload-simulator">
-            <p>Github</p>
+          <a href="https://github.com/oriyuta39/overload-simulator" class="text-link">
+            <p>Github Repository</p>
           </a>
         </div>
         <p>初めて作ったシンプルなWEBアプリです。<br>
@@ -62,6 +62,24 @@ definePageMeta({
 #works_1 img {
   width: 400px;
   height: auto;
-  /* アスペクト比を保ったまま */
+  margin: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.39);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transform: scale(1);
+}
+
+#works_1 img:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.50);
+  transform: scale(1.02);
+}
+
+.text-link {
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.text-link:hover {
+  color: #39aaff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 </style>

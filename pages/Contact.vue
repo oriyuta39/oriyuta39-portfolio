@@ -7,7 +7,7 @@
       </div>
       <section class="container-contact">
         <h2 class="m-4">メールアドレス</h2>
-        <a href="mailto:oriyuta39.dev@gmail.com " class="email-link">oriyuta39.dev@gmail.com</a>
+        <a href="mailto:oriyuta39.dev@gmail.com " class="text-link">oriyuta39.dev@gmail.com</a>
       </section>
       <section class="container-contact">
         <h2 class="m-4">SNS</h2>
@@ -65,13 +65,13 @@ definePageMeta({
   width: 640px;
 }
 
-.email-link {
-  font-size: 1.2rem;
+.text-link {
+  font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.email-link:hover {
+.text-link:hover {
   color: #39aaff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
