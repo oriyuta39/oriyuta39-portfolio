@@ -11,9 +11,10 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: './favicon.ico' },
+        { href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css', rel: 'stylesheet' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
-        { href: 'https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Limelight&family=Markazi+Text:wght@500&family=Tangerine:wght@700&display=swap', rel: 'stylesheet' },
+        { href: 'https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Limelight&family=Markazi+Text:wght@500&family=Tangerine:wght@700', rel: 'stylesheet' },
       ],
       title: 'oriyuta39 - Portfolio',
     },
@@ -29,7 +30,7 @@ export default defineNuxtConfig({
   css: ['bootstrap/dist/css/bootstrap.min.css'],
   vite: {
     define: {
-      'process.env.DEBUG': false, // JS対応
+      'process.env.DEBUG': false,
     },
   },
 })

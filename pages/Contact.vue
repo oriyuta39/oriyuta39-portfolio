@@ -15,18 +15,22 @@
           <!-- GitHub -->
           <div class="container-sns">
             <a href="https://github.com/oriyuta39" target="_blank" class="sns-item">
-              <FontAwesomeIcon :icon="['fab', 'github-square']" size="7x" />
+              <i class="fa-brands fa-square-github fa-7x" />
             </a>
             <p>GitHub</p>
           </div>
           <!-- Twitter -->
           <div class="container-sns">
             <a href="https://twitter.com/oriyuta39" target="_blank" class="sns-item">
-              <FontAwesomeIcon :icon="['fab', 'square-x-twitter']" size="7x" />
+              <i class="fa-brands fa-square-x-twitter fa-7x" />
             </a>
             <p>X</p>
           </div>
         </div>
+      </section>
+      <section class="container-contact">
+        <h2 class="m-4">お問い合わせ</h2>
+        <p>準備中</p>
       </section>
     </div>
   </div>

@@ -5,21 +5,39 @@
       <div id="title-works">
         <h1>作品</h1>
       </div>
-      <section id="works_1" class="container-works">
-        <h2 class="mt-4">シミュレーション型WEBアプリ</h2>
-        <p>2025/03</p>
-        <div>
-          <a href="https://oriyuta39.github.io/overload-simulator/" target="_blank">
-            <img src="../public/images/overloadsimulator.png" alt="オーバーロードシミュレーター">
-          </a>
-          <p>HTML/CSS/JavaScript</p>
-          <a href="https://github.com/oriyuta39/overload-simulator" class="text-link">
-            <p>Github Repository</p>
-          </a>
+      <section id="container-works">
+        <div id="work-1" class="container-work">
+          <h2 class="mt-4">シミュレーション型WEBアプリ</h2>
+          <p>2025/03</p>
+          <div>
+            <a href="https://oriyuta39.github.io/overload-simulator/" target="_blank">
+              <img src="../public/images/overloadsimulator.png" alt="オーバーロードシミュレーター">
+            </a>
+            <p>HTML/CSS/JavaScript</p>
+            <a href="https://github.com/oriyuta39/overload-simulator" class="text-link">
+              <p>Github Repository</p>
+            </a>
+          </div>
+          <p class="m-2">初めて作ったシンプルなWEBアプリです<br>
+            とあるゲームに登場する「装備品の性能を厳選するシステム」を再現した、静的WEBアプリです
+          </p>
         </div>
-        <p>初めて作ったシンプルなWEBアプリです。<br>
-          とあるゲームに登場する「装備品の性能を厳選する仕組み」を再現した、静的WEBアプリです。<br>
-        </p>
+        <div id="work-2" class="container-work">
+          <h2 class="mt-4">ポートフォリオサイト</h2>
+          <p>2025/05</p>
+          <div>
+            <a href="https://oriyuta39-portfolio.netlify.app/" target="_blank">
+              <img src="../public/images/oriyuta39-portfolio.png" alt="oriyuta39-portfolio">
+            </a>
+            <p>Nuxt.js/Vue.js</p>
+            <a href="https://github.com/oriyuta39/oriyuta39-portfolio" class="text-link">
+              <p>Github Repository</p>
+            </a>
+          </div>
+          <p class="m-2">専門学校で学んだ内容を活かし、個人で制作しました<br>
+            初めてフレームワークを導入し、ゼロから構築しています
+          </p>
+        </div>
       </section>
     </div>
   </div>
@@ -32,6 +50,10 @@ definePageMeta({
 </script>
 
 <style scoped>
+p {
+  margin: 0;
+}
+
 .works {
   text-align: center;
   display: flex;
@@ -52,23 +74,33 @@ definePageMeta({
   padding: 30px;
 }
 
-.container-works {
-  max-width: 820px;
-  border-bottom: 1px solid #ffaa39;
-  padding: 20px 0px 40px 0px;
-  margin: 0 20px 0px 20px;
+#container-works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#works_1 img {
-  width: 400px;
-  height: auto;
-  margin: 20px;
+.container-work {
+  max-width: 380px;
+  border-bottom: 1px solid #ffaa39;
+  margin: 0 20px;
+}
+
+.container-work h2 {
+  font-size: 20px;
+}
+
+img {
+  width: 200px;
+  height: 130px;
+  margin-bottom: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.39);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   transform: scale(1);
+  object-fit: cover;
 }
 
-#works_1 img:hover {
+img:hover {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.50);
   transform: scale(1.02);
 }

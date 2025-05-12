@@ -3,7 +3,7 @@
     <ul>
       <li v-for="(crumb, index) in breadcrumbs" :key="crumb.path">
         <NuxtLink v-if="index !== breadcrumbs.length - 1" :to="crumb.path">
-          <FontAwesomeIcon :icon="['fas', 'house']" />
+          <i class="fas fa-house" />
           {{ crumb.meta?.breadcrumb || crumb.name }}
         </NuxtLink>
         <span v-else aria-current="page">
