@@ -19,7 +19,7 @@ export default withNuxt(
     },
   },
   stylistic.configs.customize({
-    quotes: 'single', // クオートはシングル
-    semi: false, // セミコロンは不要
+    quotes: 'single',
+    semi: false,
   }),
 )

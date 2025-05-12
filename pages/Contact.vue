@@ -18,7 +18,6 @@
               <p>GitHub</p>
             </a>
           </div>
-          <!-- Twitter -->
           <div class="container-sns">
             <a href="https://twitter.com/oriyuta39" target="_blank" class="sns-item">
               <i class="fa-brands fa-square-x-twitter fa-7x" />
