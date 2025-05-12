@@ -1,13 +1,13 @@
 <template>
   <div>
     <Breadcrumb />
-    <div class="works mb-4">
+    <div class="works">
       <div id="title-works">
         <h1>作品</h1>
       </div>
       <section id="container-works">
         <div id="work-1" class="container-work">
-          <h2 class="mt-4">シミュレーション型WEBアプリ</h2>
+          <h2>シミュレーション型WEBアプリ</h2>
           <p>2025/03</p>
           <div>
             <a href="https://oriyuta39.github.io/overload-simulator/" target="_blank">
@@ -23,7 +23,7 @@
           </p>
         </div>
         <div id="work-2" class="container-work">
-          <h2 class="mt-4">ポートフォリオサイト</h2>
+          <h2>ポートフォリオサイト</h2>
           <p>2025/05</p>
           <div>
             <a href="https://oriyuta39-portfolio.netlify.app/" target="_blank">
@@ -34,7 +34,7 @@
               <p>Github Repository</p>
             </a>
           </div>
-          <p class="m-2">専門学校で学んだ内容を活かし、個人で制作しました<br>
+          <p class="m-2">学校で学んだ内容を活かし、個人で制作しました<br>
             初めてフレームワークを導入し、ゼロから構築しています
           </p>
         </div>
@@ -64,30 +64,37 @@ p {
   font-family: "Kosugi Maru", sans-serif;
   overflow-x: hidden;
   width: 100%;
+  color: #393939;
 }
 
 #title-works {
   width: 100%;
   max-width: 840px;
-  border-top: 2px solid #ffaa39;
-  border-bottom: 2px solid #ffaa39;
+  border: 1px solid #ffaa39;
+  border-radius: 50px;
   padding: 30px;
+  font-family: "Mochiy Pop One", sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom right, #ffffff 50%, #00ff0039);
 }
 
 #container-works {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 20px 10px 0px 10px;
 }
 
 .container-work {
-  max-width: 380px;
+  width: 380px;
   border-bottom: 1px solid #ffaa39;
-  margin: 0 20px;
+  margin: 20px;
+  padding-bottom: 20px;
 }
 
 .container-work h2 {
   font-size: 20px;
+  font-family: "Mochiy Pop One", sans-serif;
 }
 
 img {

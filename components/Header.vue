@@ -75,7 +75,7 @@ li {
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgba(245, 245, 245, 0.7);
+  background: linear-gradient(to bottom, #ffffff 70%, #ffe3a9);
   box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
 }
 
@@ -85,11 +85,11 @@ li {
   transition: font-size 0.2s linear, line-height 0.2s linear;
   font-size: 30px;
   transform: none;
-  background: rgb(200, 200, 200);
+  background: linear-gradient(to bottom right, #ffffff 10%, #00000039);
   font-family: "Limelight", sans-serif;
   width: 320px;
   margin: 0 auto;
-  color: #393939;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 #header.small>div>h1 {
@@ -130,7 +130,7 @@ li {
 }
 
 .header_navi li a.active {
-  border-bottom: 1px solid #ffaa39;
+  border-bottom: 2px solid #ffaa39;
 }
 
 @media (max-width: 520px) {

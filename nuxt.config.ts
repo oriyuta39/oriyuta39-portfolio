@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         { href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css', rel: 'stylesheet' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
-        { href: 'https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Limelight&family=Markazi+Text:wght@500&family=Tangerine:wght@700', rel: 'stylesheet' },
+        { href: 'https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Limelight&family=Markazi+Text:wght@500&family=Mochiy+Pop+One&family=Tangerine:wght@700', rel: 'stylesheet' },
       ],
       title: 'oriyuta39 - Portfolio',
     },

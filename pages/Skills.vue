@@ -88,14 +88,18 @@ definePageMeta({
   font-family: "Kosugi Maru", sans-serif;
   overflow-x: hidden;
   width: 100%;
+  color: #393939;
 }
 
 #title-skill {
   width: 100%;
   max-width: 840px;
-  border-top: 2px solid #ffaa39;
-  border-bottom: 2px solid #ffaa39;
+  border: 1px solid #ffaa39;
+  border-radius: 50px;
   padding: 30px;
+  font-family: "Mochiy Pop One", sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom right, #ffffff 50%, #00ffff39);
 }
 
 #container-skills {
@@ -108,6 +112,10 @@ definePageMeta({
   border-bottom: 1px solid #ffaa39;
   padding: 20px 0px 40px 0px;
   margin: 0 20px 0 20px;
+}
+
+.container-table h2 {
+  font-family: "Mochiy Pop One", sans-serif;
 }
 
 table {

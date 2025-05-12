@@ -75,10 +75,6 @@ a {
   text-decoration: none;
 }
 
-p {
-  color: #393939;
-}
-
 .home {
   display: flex;
   flex-direction: column;
@@ -88,6 +84,7 @@ p {
   font-family: "Kosugi Maru", sans-serif;
   overflow-x: hidden;
   width: 100%;
+  color: #393939;
 }
 
 #title-box {
@@ -120,7 +117,6 @@ p {
   z-index: 1;
   font-family: "Tangerine", cursive;
   font-size: 70px;
-  color: #393939;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -138,11 +134,18 @@ p {
   width: 520px;
 }
 
+#pages {
+  max-width: 840px;
+}
+
 #title-pages {
-  width: 100%;
-  border-top: 2px solid #ffaa39;
-  border-bottom: 2px solid #ffaa39;
-  padding: 30px;
+  border: 1px solid #ffaa39;
+  border-radius: 50px;
+  padding: 30px 0;
+  margin: 10px;
+  font-family: "Mochiy Pop One", sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom right, #ffffff 50%, #ffe3a9 100%);
 }
 
 #container-pages {
@@ -168,11 +171,11 @@ p {
 }
 
 .card h3 {
-  color: #393939;
   font-weight: bold;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   transition: color 0.3s ease;
+  font-family: "Mochiy Pop One", sans-serif;
 }
 
 .card:hover {
@@ -202,10 +205,6 @@ p {
 
 .card-title {
   font-family: "Markazi Text", serif;
-}
-
-.jp-font {
-  font-family: "Kosugi Maru", sans-serif;
 }
 
 @media (max-width: 520px) {
