@@ -11,7 +11,7 @@
           <p>2025/03</p>
           <div>
             <a href="https://oriyuta39.github.io/overload-simulator/" target="_blank">
-              <img src="../public/images/overloadsimulator.png" alt="オーバーロードシミュレーター">
+              <img src="/images/overloadsimulator.png" alt="オーバーロードシミュレーター">
             </a>
             <p>HTML/CSS/JavaScript</p>
             <a href="https://github.com/oriyuta39/overload-simulator" class="text-link">
@@ -27,7 +27,7 @@
           <p>2025/05</p>
           <div>
             <a href="https://oriyuta39-portfolio.netlify.app/" target="_blank">
-              <img src="../public/images/oriyuta39-portfolio.png" alt="oriyuta39-portfolio">
+              <img src="/images/oriyuta39-portfolio.png" alt="oriyuta39-portfolio">
             </a>
             <p>Nuxt.js/Vue.js</p>
             <a href="https://github.com/oriyuta39/oriyuta39-portfolio" class="text-link">

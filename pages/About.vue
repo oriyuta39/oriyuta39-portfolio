@@ -84,7 +84,7 @@ definePageMeta({
   padding: 30px;
   font-family: "Mochiy Pop One", sans-serif;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(to bottom right, #ffffff 0%, #ff000039);
+  background: linear-gradient(to bottom right, #ffffff 50%, #ff000039);
 }
 
 .container-about {

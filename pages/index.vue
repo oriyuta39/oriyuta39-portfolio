@@ -104,7 +104,7 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('../public/images/simaenaga.jpeg');
+  background-image: url('/images/simaenaga.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
