@@ -39,6 +39,7 @@
           </p>
         </div>
       </section>
+      <p class="mb-3">more creations coming soon</p>
     </div>
   </div>
 </template>

@@ -29,21 +29,22 @@
 
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
-        <p>準備中</p>
-        <form action="">
-          <div class="mb-3">
-            <label for="name" class="form-label">name</label>
-            <input id="name" type="name" class="form-control" required>
+        <form name="contact" method="POST" data-netlify="true" netlify>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name" class="form-label">名前</label>
+              <input id="name" type="name" class="form-control" maxlength="20" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">メールアドレス</label>
+              <input id="email" type="email" class="form-control" placeholder="example@example.com" required>
+            </div>
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input id="email" type="email" class="form-control" placeholder="name@example.com" required>
+            <label for="text" class="form-label">お問い合わせ内容</label>
+            <textarea id="text" class="form-control" rows="10" placeholder="お問い合わせ内容を入力" required />
           </div>
-          <div class="mb-3">
-            <label for="text" class="form-label">Example textarea</label>
-            <textarea id="text" class="form-control" rows="10" required />
-          </div>
-          <input id="submit" type="submit" value="送信" class="btn btn-primary p-3">
+          <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
         </form>
       </section>
     </div>
@@ -92,13 +93,14 @@ definePageMeta({
 }
 
 .text-link {
+  color: #39aaff;
   font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .text-link:hover {
-  color: #39aaff;
+  color: #0039aa;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -136,5 +138,15 @@ definePageMeta({
 .sns-item p {
   margin-top: 10px;
   font-size: 18px;
+}
+
+.form-control {
+  border: 1px solid #ffaa39;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #39393939;
+  opacity: 1;
 }
 </style>
