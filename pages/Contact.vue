@@ -26,13 +26,26 @@
           </div>
         </div>
       </section>
-      <!--
-      #準備中
+
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
         <p>準備中</p>
+        <form action="">
+          <div class="mb-3">
+            <label for="name" class="form-label">name</label>
+            <input id="name" type="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input id="email" type="email" class="form-control" placeholder="name@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="text" class="form-label">Example textarea</label>
+            <textarea id="text" class="form-control" rows="10" required />
+          </div>
+          <input id="submit" type="submit" value="送信" class="btn btn-primary p-3">
+        </form>
       </section>
-      -->
     </div>
   </div>
 </template>
