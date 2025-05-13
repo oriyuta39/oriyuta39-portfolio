@@ -29,7 +29,7 @@
 
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
-        <form name="contact" method="POST" netlify netlify-honeypot="bot-field" hidden>
+        <form name="contact" method="POST" netlify netlify-honeypot="bot-field">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name" class="form-label">名前</label>
@@ -56,26 +56,31 @@ definePageMeta({
   breadcrumb: 'Contact',
 })
 
-const form = document.querySelector('form')
+const form = ref() // formを参照として管理
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault() // 通常のフォーム送信を防ぐ
+onMounted(() => {
+  // フォームがDOMにマウントされた後にフォーム操作を行う
+  if (form.value) {
+    form.value.addEventListener('submit', (event) => {
+      event.preventDefault() // 通常のフォーム送信を防ぐ
 
-  const formData = new FormData(form)
+      const formData = new FormData(form.value)
 
-  fetch('/', {
-    method: 'POST',
-    body: formData,
-  })
-    .then(() => {
-      // 送信が成功した場合
-      alert('フォームが送信されました。')
-      form.reset() // フォームをリセット
+      fetch('/', {
+        method: 'POST',
+        body: formData,
+      })
+        .then(() => {
+          // 送信が成功した場合
+          alert('フォームが送信されました。')
+          form.value.reset() // フォームをリセット
+        })
+        .catch(() => {
+          // 送信が失敗した場合
+          alert('フォーム送信に失敗しました。もう一度お試しください。')
+        })
     })
-    .catch(() => {
-      // 送信が失敗した場合
-      alert('フォーム送信に失敗しました。もう一度お試しください。')
-    })
+  }
 })
 </script>
 
