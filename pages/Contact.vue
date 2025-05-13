@@ -27,6 +27,7 @@
         </div>
       </section>
 
+      <!--
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
         <form name="contact" method="POST" netlify @submit.prevent="handleSubmit">
@@ -56,16 +57,17 @@
           </form>
         </noscript>
       </section>
+      -->
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-
 definePageMeta({
   breadcrumb: 'Contact',
 })
+/*
+import { ref } from 'vue'
 
 const form = ref({
   name: '',
@@ -109,6 +111,7 @@ const handleSubmit = async () => {
     alert('送信に失敗しました。時間をおいて再度お試しください。')
   }
 }
+*/
 </script>
 
 <style scoped>
