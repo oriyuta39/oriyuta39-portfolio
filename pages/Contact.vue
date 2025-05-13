@@ -29,11 +29,11 @@
 
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
-        <form name="contact" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
+        <form name="contact" method="POST" netlify>
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name" class="form-label">名前</label>
-              <input id="name" name="name" type="name" class="form-control" maxlength="20" required>
+              <input id="name" name="name" type="text" class="form-control" maxlength="20" required>
             </div>
             <div class="col-md-6 mb-3">
               <label for="email" class="form-label">メールアドレス</label>
