@@ -29,23 +29,29 @@
 
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
-        <form name="contact" method="POST" netlify>
+        <form name="contact" method="POST" netlify @submit.prevent="handleSubmit">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name" class="form-label">名前</label>
-              <input id="name" name="name" type="text" class="form-control" maxlength="20" required>
+              <input id="name" v-model="form.name" name="name" type="text" class="form-control" maxlength="20" required>
             </div>
             <div class="col-md-6 mb-3">
               <label for="email" class="form-label">メールアドレス</label>
-              <input id="email" name="email" type="email" class="form-control" placeholder="example@example.com"
-                required>
+              <input id="email" v-model="form.email" name="email" type="email" class="form-control"
+                placeholder="example@example.com" required>
             </div>
           </div>
           <div class="mb-3">
             <label for="text" class="form-label">お問い合わせ内容</label>
-            <textarea id="text" name="message" class="form-control" rows="10" placeholder="お問い合わせ内容を入力" required />
+            <textarea id="text" v-model="form.message" name="message" class="form-control" rows="10"
+              placeholder="お問い合わせ内容を入力" required />
           </div>
           <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
+        </form>
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+          <input type="text" name="name">
+          <input type="email" name="email">
+          <textarea name="message" />
         </form>
       </section>
     </div>
@@ -53,9 +59,54 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 definePageMeta({
   breadcrumb: 'Contact',
 })
+
+const form = ref({
+  name: '',
+  email: '',
+  message: '',
+})
+
+const encode = (data) => {
+  return Object.keys(data)
+    .map(
+      key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]),
+    )
+    .join('&')
+}
+
+const handleSubmit = async () => {
+  try {
+    await $fetch('/', {
+      method: 'POST',
+      body: encode({
+        'form-name': 'contact',
+        ...form.value,
+      }),
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    })
+
+    // 成功アラート
+    alert('お問い合わせありがとうございます！送信が完了しました。')
+
+    // フォームをリセット（任意）
+    form.value = {
+      name: '',
+      email: '',
+      message: '',
+    }
+  }
+  catch {
+    // 失敗時アラート
+    alert('送信に失敗しました。時間をおいて再度お試しください。')
+  }
+}
 </script>
 
 <style scoped>
@@ -86,7 +137,8 @@ definePageMeta({
 .container-contact {
   border-bottom: 1px solid #ffaa39;
   padding: 20px 0px 40px 0px;
-  width: 640px;
+  width: 100%;
+  max-width: 640px;
 }
 
 .container-contact h2 {
