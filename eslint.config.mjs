@@ -7,6 +7,7 @@ export default withNuxt(
     rules: {
       'no-console': 'error',
       '@typescript-eslint/no-explicit-any': 'error',
+      'vue/first-attribute-linebreak': 'off',
     },
   },
   {

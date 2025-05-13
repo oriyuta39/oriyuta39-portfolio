@@ -29,20 +29,21 @@
 
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
-        <form name="contact" method="POST" netlify netlify-honeypot="bot-field">
+        <form name="contact" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name" class="form-label">名前</label>
-              <input id="name" type="name" class="form-control" maxlength="20" required>
+              <input id="name" name="name" type="name" class="form-control" maxlength="20" required>
             </div>
             <div class="col-md-6 mb-3">
               <label for="email" class="form-label">メールアドレス</label>
-              <input id="email" type="email" class="form-control" placeholder="example@example.com" required>
+              <input id="email" name="email" type="email" class="form-control" placeholder="example@example.com"
+                required>
             </div>
           </div>
           <div class="mb-3">
             <label for="text" class="form-label">お問い合わせ内容</label>
-            <textarea id="text" class="form-control" rows="10" placeholder="お問い合わせ内容を入力" required />
+            <textarea id="text" name="message" class="form-control" rows="10" placeholder="お問い合わせ内容を入力" required />
           </div>
           <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
         </form>
@@ -54,33 +55,6 @@
 <script setup>
 definePageMeta({
   breadcrumb: 'Contact',
-})
-
-const form = ref() // formを参照として管理
-
-onMounted(() => {
-  // フォームがDOMにマウントされた後にフォーム操作を行う
-  if (form.value) {
-    form.value.addEventListener('submit', (event) => {
-      event.preventDefault() // 通常のフォーム送信を防ぐ
-
-      const formData = new FormData(form.value)
-
-      fetch('/', {
-        method: 'POST',
-        body: formData,
-      })
-        .then(() => {
-          // 送信が成功した場合
-          alert('フォームが送信されました。')
-          form.value.reset() // フォームをリセット
-        })
-        .catch(() => {
-          // 送信が失敗した場合
-          alert('フォーム送信に失敗しました。もう一度お試しください。')
-        })
-    })
-  }
 })
 </script>
 
