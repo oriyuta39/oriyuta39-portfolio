@@ -48,11 +48,13 @@
           </div>
           <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
         </form>
-        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-          <input type="text" name="name">
-          <input type="email" name="email">
-          <textarea name="message" />
-        </form>
+        <noscript>
+          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="text" name="name">
+            <input type="email" name="email">
+            <textarea name="message" />
+          </form>
+        </noscript>
       </section>
     </div>
   </div>
