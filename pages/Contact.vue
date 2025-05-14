@@ -27,10 +27,9 @@
         </div>
       </section>
 
-      <!--
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
-        <form name="contact" method="POST" netlify @submit.prevent="handleSubmit">
+        <form name="contact" method="POST" netlify>
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name" class="form-label">名前</label>
@@ -43,75 +42,49 @@
             </div>
           </div>
           <div class="mb-3">
-            <label for="text" class="form-label">お問い合わせ内容</label>
-            <textarea id="text" v-model="form.message" name="message" class="form-control" rows="10"
+            <label for="message" class="form-label">お問い合わせ内容</label>
+            <textarea id="message" v-model="form.message" name="message" class="form-control" rows="10"
               placeholder="お問い合わせ内容を入力" required />
           </div>
           <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
         </form>
-        <noscript>
-          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="name">
-            <input type="email" name="email">
-            <textarea name="message" />
-          </form>
-        </noscript>
       </section>
-      -->
     </div>
   </div>
 </template>
 
-<script setup>
+<script>
 definePageMeta({
   breadcrumb: 'Contact',
 })
-/*
-import { ref } from 'vue'
 
-const form = ref({
-  name: '',
-  email: '',
-  message: '',
-})
-
-const encode = (data) => {
-  return Object.keys(data)
-    .map(
-      key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]),
-    )
-    .join('&')
-}
-
-const handleSubmit = async () => {
-  try {
-    await $fetch('/', {
-      method: 'POST',
-      body: encode({
-        'form-name': 'contact',
-        ...form.value,
-      }),
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
+export default {
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        message: '',
+        botfield: '',
       },
-    })
-
-    // 成功アラート
-    alert('お問い合わせありがとうございます！送信が完了しました。')
-
-    // フォームをリセット（任意）
-    form.value = {
-      name: '',
-      email: '',
-      message: '',
     }
-  }
-  catch {
-    // 失敗時アラート
-    alert('送信に失敗しました。時間をおいて再度お試しください。')
-  }
+  },
+  methods: {
+    async submit() {
+      const params = new FormData()
+      // 以下、ダミーフォームの各フォーム要素のnameと合わせる
+      params.append('form-name', 'contact')
+      params.append('name', this.form.name)
+      params.append('email', this.form.email)
+      params.append('message', this.form.message)
+      params.append('bot-field', this.form.botfield)
+
+      // const response = await this.$axios.$post(window.location.origin, params)
+      // 実際はresponseを使って画面側にフィードバックさせるが、ここでは仮にconsoleに出力
+      // console.log(response)
+    },
+  },
 }
-*/
 </script>
 
 <style scoped>
