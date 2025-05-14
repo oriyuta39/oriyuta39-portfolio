@@ -46,44 +46,45 @@
             <textarea id="message" v-model="form.message" name="message" class="form-control" rows="10"
               placeholder="お問い合わせ内容を入力" required />
           </div>
-          <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
+          <input id="submit" type="submit" value="送信" class="btn btn-primary px-3" @click.prevent="submit">
         </form>
       </section>
     </div>
   </div>
 </template>
 
-<script>
+<script setup>
+import { reactive } from 'vue'
+
 definePageMeta({
   breadcrumb: 'Contact',
 })
 
-export default {
-  data() {
-    return {
-      form: {
-        name: '',
-        email: '',
-        message: '',
-        botfield: '',
-      },
-    }
-  },
-  methods: {
-    async submit() {
-      const params = new FormData()
-      // 以下、ダミーフォームの各フォーム要素のnameと合わせる
-      params.append('form-name', 'contact')
-      params.append('name', this.form.name)
-      params.append('email', this.form.email)
-      params.append('message', this.form.message)
-      params.append('bot-field', this.form.botfield)
+const form = reactive({
+  name: '',
+  email: '',
+  message: '',
+  botfield: '',
+})
 
-      // const response = await this.$axios.$post(window.location.origin, params)
-      // 実際はresponseを使って画面側にフィードバックさせるが、ここでは仮にconsoleに出力
-      // console.log(response)
-    },
-  },
+const submit = async () => {
+  const params = new FormData()
+  params.append('form-name', 'contact')
+  params.append('name', form.name)
+  params.append('email', form.email)
+  params.append('message', form.message)
+  params.append('bot-field', form.botfield)
+
+  // try {
+  //   const response = await fetch('/', {
+  //     method: 'POST',
+  //     body: params,
+  //   })
+  //   console.log('送信成功', response)
+  // }
+  // catch (error) {
+  //   console.error('送信エラー', error)
+  // }
 }
 </script>
 
