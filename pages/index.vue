@@ -14,14 +14,14 @@
 
     <section id="pages">
       <div id="title-pages">
-        <h1>ページ紹介</h1>
+        <h2>ページ紹介</h2>
       </div>
       <div id="container-pages" class="row g-3">
         <div class="col">
           <NuxtLink to="/about">
             <div class="card">
               <div class="card-body card-about">
-                <h3 class="card-title mt-4">About / <span class="jp-font">自己紹介</span></h3>
+                <h3 class="card-title mt-4">About / 自己紹介</h3>
                 <h4 class="card-title small">My Story Writing</h4>
                 <p class="card-text mt-5">プロフィールやこれまでの経験について</p>
               </div>
@@ -32,7 +32,7 @@
           <NuxtLink to="/skills">
             <div class="card">
               <div class="card-body card-skills">
-                <h3 class="card-title mt-4">Skills / <span class="jp-font">スキル</span></h3>
+                <h3 class="card-title mt-4">Skills / スキル</h3>
                 <h4 class="card-title small">My Technical Ability</h4>
                 <p class="card-text mt-5">保有資格や専門スキルについて</p>
               </div>
@@ -43,7 +43,7 @@
           <NuxtLink to="/works">
             <div class="card">
               <div class="card-body card-works">
-                <h3 class="card-title mt-4">Works / <span class="jp-font">作品</span></h3>
+                <h3 class="card-title mt-4">Works / 作品</h3>
                 <h4 class="card-title small">My Creative Creations</h4>
                 <p class="card-text mt-5">開発プロジェクトと成果物について</p>
               </div>

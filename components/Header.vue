@@ -5,19 +5,19 @@
       <nav class="header_navi">
         <ul>
           <li>
-            <NuxtLink to="/" exact-active-class="active">Home</NuxtLink>
+            <NuxtLink to="/" active-class="active">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/about" exact-active-class="active">About</NuxtLink>
+            <NuxtLink to="/about" active-class="active">About</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/skills" exact-active-class="active">Skills</NuxtLink>
+            <NuxtLink to="/skills" active-class="active">Skills</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/works" exact-active-class="active">Works</NuxtLink>
+            <NuxtLink to="/works" active-class="active">Works</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/contact" exact-active-class="active">Contact</NuxtLink>
+            <NuxtLink to="/contact" active-class="active">Contact</NuxtLink>
           </li>
         </ul>
       </nav>

@@ -100,6 +100,7 @@ definePageMeta({
 table {
   margin: 0 auto;
   border-collapse: collapse;
+  overflow-x: auto;
 }
 
 th {
