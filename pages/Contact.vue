@@ -27,7 +27,7 @@
         </div>
       </section>
 
-      <section class="container-contact">
+      <!-- <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
         <form name="contact" method="POST" netlify>
           <input type="hidden" name="form-name" value="contact">
@@ -48,7 +48,7 @@
           </div>
           <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
         </form>
-      </section>
+      </section> -->
     </div>
   </div>
 </template>
