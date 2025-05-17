@@ -50,7 +50,7 @@
         </form>
       </section> -->
 
-      <div>
+      <!-- <div>
         <form name="vue-tea" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="vue-tea">
           <div class="tea">
@@ -65,7 +65,7 @@
           </div>
           <button>Submit</button>
         </form>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -75,7 +75,7 @@ definePageMeta({
   breadcrumb: 'Contact',
 })
 </script>
-<script>
+<!-- <script>
 export default {
   data() {
     return {
@@ -101,7 +101,7 @@ export default {
     },
   },
 }
-</script>
+</script> -->
 
 <style scoped>
 .contact {
