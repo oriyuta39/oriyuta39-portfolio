@@ -1,6 +1,8 @@
 export default {
   compatibilityDate: '2025-05-12',
   mode: 'universal',
+  ssr: true,
+  target: 'static',
   app: {
     head: {
       htmlAttrs: {
@@ -34,5 +36,4 @@ export default {
       'process.env.DEBUG': false,
     },
   },
-  ssr: true,
 }
