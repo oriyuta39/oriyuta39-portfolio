@@ -49,6 +49,23 @@
           <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
         </form>
       </section> -->
+
+      <div>
+        <form name="vue-tea" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="vue-tea">
+          <div class="tea">
+            <h2>Pick a Tea</h2>
+            <label v-for="tea in teaNames" :key="tea" :class="{
+              'tea-label': true,
+              checked: tea === chosenTea
+            }">
+              <input id="tea" v-model="chosenTea" name="tea" type="radio" :value="tea">
+              <span>{{ tea }}</span>
+            </label>
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 </template>
@@ -58,35 +75,33 @@ definePageMeta({
   breadcrumb: 'Contact',
 })
 </script>
-<!-- <script>
+<script>
 export default {
   data() {
     return {
-      form: {
-        name: '',
-        email: '',
-        message: '',
-        botfield: '',
+      chosenTea: 'Earl Grey',
+      teaTypes: {
+        'Earl Grey': 'London',
+        'Irish Breakfast': 'Dublin',
+        'Chai': 'Bombay',
+        'Rose': 'Atlantic City',
+        'Matcha': 'Tokyo',
+        'Rooibos': 'Cape Town',
+        'Yerba Mate': 'Montreal',
+        'Green': 'Oregon Mist',
       },
     }
   },
-  methods: {
-    async submit() {
-      const params = new FormData()
-      // 以下、ダミーフォームの各フォーム要素のnameと合わせる
-      params.append('form-name', 'contact')
-      params.append('name', this.form.name)
-      params.append('email', this.form.email)
-      params.append('message', this.form.message)
-      params.append('bot-field', this.form.botfield)
-
-      // const response = await this.$axios.$post(window.location.origin, params)
-      // 実際はresponseを使って画面側にフィードバックさせるが、ここでは仮にconsoleに出力
-      // console.log(response)
+  computed: {
+    teaName() {
+      return `${this.teaTypes[this.chosenTea]} Fog`
+    },
+    teaNames() {
+      return Object.keys(this.teaTypes)
     },
   },
 }
-</script> -->
+</script>
 
 <style scoped>
 .contact {

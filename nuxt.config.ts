@@ -1,5 +1,6 @@
-export default defineNuxtConfig({
+export default {
   compatibilityDate: '2025-05-12',
+  mode: 'universal',
   app: {
     head: {
       htmlAttrs: {
@@ -34,4 +35,4 @@ export default defineNuxtConfig({
     },
   },
   ssr: true,
-})
+}
