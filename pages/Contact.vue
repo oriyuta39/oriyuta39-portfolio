@@ -30,7 +30,7 @@
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
         <p>準備中</p>
-        <!-- <form name="contact" method="POST" netlify>
+        <form name="contact" method="POST" netlify>
           <input type="hidden" name="form-name" value="contact">
           <div class="row">
             <div class="col-md-6 mb-3">
@@ -48,25 +48,8 @@
             <textarea id="message" name="message" class="form-control" rows="10" placeholder="お問い合わせ内容を入力" required />
           </div>
           <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
-        </form> -->
-      </section>
-
-      <!-- <div>
-        <form name="vue-tea" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="vue-tea">
-          <div class="tea">
-            <h2>Pick a Tea</h2>
-            <label v-for="tea in teaNames" :key="tea" :class="{
-              'tea-label': true,
-              checked: tea === chosenTea
-            }">
-              <input id="tea" v-model="chosenTea" name="tea" type="radio" :value="tea">
-              <span>{{ tea }}</span>
-            </label>
-          </div>
-          <button>Submit</button>
         </form>
-      </div> -->
+      </section>
     </div>
   </div>
 </template>
