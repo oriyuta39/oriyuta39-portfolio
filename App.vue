@@ -7,14 +7,6 @@
       </NuxtLayout>
     </div>
     <Footer />
-
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="contact">
-      <input name="name" type="text">
-      <input name="email" type="email">
-      <textarea name="message" type="text" />
-      <input type="text" name="bot-field">
-    </form>
   </div>
 </template>
 
