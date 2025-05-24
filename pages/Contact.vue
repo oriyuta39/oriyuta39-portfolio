@@ -30,7 +30,7 @@
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
         <p>準備中</p>
-        <form name="contact" method="POST">
+        <form name="contact" method="POST" netlify>
           <input type="hidden" name="form-name" value="contact">
           <div class="row">
             <div class="col-md-6 mb-3">
