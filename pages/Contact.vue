@@ -59,33 +59,6 @@ definePageMeta({
   breadcrumb: 'Contact',
 })
 </script>
-<!-- <script>
-export default {
-  data() {
-    return {
-      chosenTea: 'Earl Grey',
-      teaTypes: {
-        'Earl Grey': 'London',
-        'Irish Breakfast': 'Dublin',
-        'Chai': 'Bombay',
-        'Rose': 'Atlantic City',
-        'Matcha': 'Tokyo',
-        'Rooibos': 'Cape Town',
-        'Yerba Mate': 'Montreal',
-        'Green': 'Oregon Mist',
-      },
-    }
-  },
-  computed: {
-    teaName() {
-      return `${this.teaTypes[this.chosenTea]} Fog`
-    },
-    teaNames() {
-      return Object.keys(this.teaTypes)
-    },
-  },
-}
-</script> -->
 
 <style scoped>
 .contact {
