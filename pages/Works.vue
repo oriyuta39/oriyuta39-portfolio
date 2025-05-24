@@ -11,7 +11,8 @@
           <p>2025/03</p>
           <div>
             <a href="https://oriyuta39.github.io/overload-simulator/" target="_blank">
-              <img src="/images/overloadsimulator.png" alt="オーバーロードシミュレーター">
+              <NuxtImg src="/images/overloadsimulator.webp" alt="オーバーロードシミュレーター" width="200" height="130" format="webp"
+                quality="70" />
             </a>
             <p>HTML/CSS/JavaScript</p>
             <a href="https://github.com/oriyuta39/overload-simulator" class="text-link">
@@ -27,7 +28,8 @@
           <p>2025/05</p>
           <div>
             <a href="https://oriyuta39-portfolio.netlify.app/" target="_blank">
-              <img src="/images/oriyuta39-portfolio.png" alt="oriyuta39-portfolio">
+              <NuxtImg src="/images/oriyuta39-portfolio.webp" alt="oriyuta39-portfolio" width="200" height="130"
+                format="webp" quality="70" />
             </a>
             <p>Nuxt.js/Vue.js</p>
             <a href="https://github.com/oriyuta39/oriyuta39-portfolio" class="text-link">
@@ -99,8 +101,6 @@ p {
 }
 
 img {
-  width: 200px;
-  height: 130px;
   margin-bottom: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.39);
   transition: box-shadow 0.3s ease, transform 0.3s ease;

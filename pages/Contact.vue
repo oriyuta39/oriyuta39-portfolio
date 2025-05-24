@@ -30,7 +30,7 @@
       <section class="container-contact">
         <h2 class="m-4">お問い合わせ</h2>
         <p>準備中</p>
-        <form name="contact" method="POST" netlify>
+        <!-- <form name="contact" method="POST" netlify>
           <input type="hidden" name="contact" value="contact">
           <div class="row">
             <div class="col-md-6 mb-3">
@@ -50,7 +50,7 @@
           </div>
           <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
           <input type="hidden" name="bot-field">
-        </form>
+        </form> -->
       </section>
     </div>
   </div>

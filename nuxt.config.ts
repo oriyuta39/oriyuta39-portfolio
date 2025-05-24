@@ -28,6 +28,7 @@ export default {
   devtools: { enabled: true },
   modules: [
     '@nuxt/eslint',
+    '@nuxt/image',
   ],
   css: ['bootstrap/dist/css/bootstrap.min.css'],
   vite: {

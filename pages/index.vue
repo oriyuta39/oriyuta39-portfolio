@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <section id="title-box">
+      <NuxtImg src="/images/simaenaga.webp" alt="背景画像" class="title-bg" quality="50" preload />
       <h1>oriyuta39 - portfolio</h1>
     </section>
 
@@ -97,19 +98,15 @@ a {
   overflow: hidden;
 }
 
-#title-box::before {
-  content: "";
+.title-bg {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  background-image: url('/images/simaenaga.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.5;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
   z-index: 0;
+  opacity: 0.5;
 }
 
 #title-box h1 {
