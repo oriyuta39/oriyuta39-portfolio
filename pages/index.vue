@@ -8,7 +8,7 @@
     <section id="about-site" class="m-5">
       <h2 class="p-2">Rewriting My Story</h2>
       <p class="p-2">
-        とあるIT系専門学校に通う学生のポートフォリオサイトです<br>
+        IT系専門学校に通う学生のポートフォリオサイトです<br>
         私がこれまでに制作した作品や学んできたことをまとめています
       </p>
     </section>

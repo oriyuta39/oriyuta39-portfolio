@@ -20,7 +20,7 @@
               </tr>
               <tr>
                 <th>Python</th>
-                <td>★★☆☆☆</td>
+                <td>★★★☆☆</td>
               </tr>
               <tr>
                 <th>Java</th>
@@ -35,6 +35,10 @@
             <tbody>
               <tr>
                 <th>Nuxt.js</th>
+                <td>★★☆☆☆</td>
+              </tr>
+              <tr>
+                <th>Vue.js</th>
                 <td>★★☆☆☆</td>
               </tr>
             </tbody>
