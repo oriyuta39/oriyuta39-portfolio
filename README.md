@@ -9,6 +9,6 @@ https://oriyuta39-portfolio.netlify.app/
 ## 使用技術
 
 - フロントエンド: HTML / CSS / JavaScript
-- フレームワーク: Nuxt / Vue / Vite
+- フレームワーク: Nuxt.js / Vue.js / Vite
 - スタイリング: Bootstrap / Google Fonts / Font Awesome
 - ホスティング: Netlify
