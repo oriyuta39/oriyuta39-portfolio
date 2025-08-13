@@ -26,32 +26,6 @@
           </div>
         </div>
       </section>
-
-      <!-- <section class="container-contact">
-        <h2 class="m-4">お問い合わせ</h2>
-        <p>準備中</p> -->
-      <!-- <form name="contact" method="POST">
-          <input type="hidden" name="contact" value="contact">
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="name" class="form-label">名前</label>
-              <input id="name" name="name" type="text" class="form-control" maxlength="20" required>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="email" class="form-label">メールアドレス</label>
-              <input id="email" name="email" type="email" class="form-control" placeholder="example@example.com"
-                required>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">お問い合わせ内容</label>
-            <textarea id="message" name="message" type="text" class="form-control" rows="10" placeholder="お問い合わせ内容を入力"
-              required />
-          </div>
-          <input id="submit" type="submit" value="送信" class="btn btn-primary px-3">
-          <input type="hidden" name="bot-field">
-        </form> -->
-      <!-- </section> -->
     </div>
   </div>
 </template>
