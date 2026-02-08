@@ -24,7 +24,7 @@
               </tr>
               <tr>
                 <th>Java</th>
-                <td>★☆☆☆☆</td>
+                <td>★★☆☆☆</td>
               </tr>
             </tbody>
           </table>
@@ -34,7 +34,7 @@
           <table>
             <tbody>
               <tr>
-                <th>Nuxt.js</th>
+                <th>React</th>
                 <td>★★☆☆☆</td>
               </tr>
               <tr>
