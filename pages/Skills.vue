@@ -15,7 +15,7 @@
                 <td>★★☆☆☆</td>
               </tr>
               <tr>
-                <th>JavaScript</th>
+                <th>JavaScript/TypeScript</th>
                 <td>★★☆☆☆</td>
               </tr>
               <tr>
@@ -39,6 +39,14 @@
               </tr>
               <tr>
                 <th>Vue.js</th>
+                <td>★★☆☆☆</td>
+              </tr>
+              <tr>
+                <th>Next.js</th>
+                <td>★★☆☆☆</td>
+              </tr>
+              <tr>
+                <th>Django</th>
                 <td>★★☆☆☆</td>
               </tr>
             </tbody>
